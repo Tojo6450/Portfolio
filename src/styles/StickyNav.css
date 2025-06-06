@@ -9,7 +9,7 @@
     padding: .5rem 12rem 0 3rem;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 0 20px var(--accent-color);
+    box-shadow: 0 0 20px #6476ac;
   }
   
   .sticky-nav ul {
@@ -26,6 +26,8 @@
 
   .logo {
     width: 72px;
+    background: #fff;
+    border-radius: 56px;
   }
   
   @media(max-width: 768px){

@@ -1,44 +1,130 @@
-import React, { useMemo } from "react";
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faXTwitter,
+  faLinkedinIn,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import { SiLeetcode } from "react-icons/si";
+import { FaGithub, FaXTwitter, FaLinkedin, FaCode } from "react-icons/fa6";
 import '../styles/Hero.css';
-import MyComponent from "./MyComponent";
 
-function Hero({ theme }) {
+const Home = () => {
+  const [imageLoad, setImageLoad] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
-  const stars = useMemo(() => {
-    return Array.from({ length: 50 }).map((_, i) => ({
-      top: Math.random() * 100,
-      left: Math.random() * 100,
-    }));
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   return (
-    <>
-      <div className="static-stars">
-        {stars.map((star, i) => (
-          <div
-            key={i}
-            className="star"
-            style={{ top: `${star.top}%`, left: `${star.left}%` }}
-          />
-        ))}
-      </div>
-      <div className="hero-content">
-        <h3 style={{color:"#ffa500"}}>Hi, my name is</h3>
-        <h1 className={`hero-h1 ${theme === 'dark' ? 'dark' : 'light'}`}>Supriyo Ghorui.</h1>
-        <h1 className="sub-h1">I am a Web developer.</h1>
-        <p>
-          Driven by a passion for crafting elegant code,
-          I continuously push myself to learn, and master new technologies.
-          My journey in development is fueled by self-drive, and an insatiable curiosity.
-          Also, I love working with a team. I am an empathetic collaborator. I thrive
-          on solving challenging problems, and transforming ideas into
-          impactful solutions.
-        </p>
+    <div className="home-containers">
+      <div className={isMobile ? "home-mobile-layouts" : "home-desktop-grids"}>
+        {/* Profile Card */}
+        <div className={isMobile ? "" : "profile-grid-areas"}>
+          <div className="profile-cards">
+            <div className="profile-image-containers">
+              {!imageLoad && <div className="image-placeholders"></div>}
+              <img
+                className="profile-images"
+                src="/mypic.png"
+                alt="Godfred"
+                loading="lazy"
+                onLoad={() => setImageLoad(true)}
+              />
+            </div>
 
+            <h1 className="profile-names">Supriyo Ghorui</h1>
+
+            <p className="profile-roles">
+              I am a Software Developer .
+            </p>
+
+            <div className="profile-socials">
+                {[
+                    {
+                      icon: <FaCode />,
+                      href: "https://codolio.com/profile/Supriyo",
+                      label: "LeetCode",
+                    },
+                    {
+                      icon: <FaXTwitter />,
+                      href: "",
+                      label: "Twitter",
+                    },
+                    {
+                      icon: <FaLinkedin />,
+                      href: "https://www.linkedin.com/in/supriyo-ghorui-17929524b/",
+                      label: "LinkedIn",
+                    },
+                    {
+                      icon: <FaGithub />,
+                      href: "https://github.com/Tojo6450",
+                      label: "GitHub",
+                    },
+                  ].map((social, index) => (
+                    <a
+                      key={index}
+                      className="social-link"
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={social.label}
+                    >
+                      {social.icon}
+                    </a>
+                  ))}
+            </div>
+          </div>
+        </div>
+
+        {/* About Section */}
+        <div className={isMobile ? "" : "about-grid-areas"}>
+          <div className="about-card">
+            <div className="about-content">
+              <p className="about-greeting">Hi There!</p>
+
+              <h2 className="about-heading">
+                I'm Supriyo Ghorui, a Software Developer building seamless,
+                user-focused web applications with clean, efficient code.
+              </h2>
+
+               <p className="about-paragraph">
+                I specialize in building high-performance, responsive solutions using modern technologies like{" "}
+                <span className="tech-colored react">React</span>,{" "}
+                <span className="tech-colored next">Next.js</span>,{" "}
+                <span className="tech-colored node">Node.js</span>, and{" "}
+                <span className="tech-colored ts">JavaScript</span>. My strength lies in blending solid engineering
+                principles with thoughtful UI/UX to create intuitive digital experiences.
+              </p>
+
+              <div className="availability-section">
+                <div className="availability-status">
+                  <span className="status-indicator" />
+                  <p>Available for Internships and full-time opportunities.</p>
+                </div>
+                <a
+              href="https://drive.google.com/file/d/1jaU1RlZQKrouy__8q0gted7kTt0un-Uv/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="download-cv-button"
+            >
+              View Resume 
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <MyComponent theme={theme} />
-    </>
+    </div>
   );
-}
+};
 
-export default Hero;
+export default Home;

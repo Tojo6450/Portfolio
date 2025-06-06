@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,7 @@ body {
 .dark {
   --bg-color: #000;
   --text-color: #e7e6e6;
-  --accent-color:#86fcaaba;
+  --accent-color:#000000;
   --accent-hover: #bb86fcd0;
   --h1-color: #fff;
   --h3-color: #fff;

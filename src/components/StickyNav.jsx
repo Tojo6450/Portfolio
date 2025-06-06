@@ -9,12 +9,6 @@ const StickyNav = ({ isMobile }) => {
             {!isMobile && <Link to="/"><img className='logo' src="/OIP.svg" alt="logo" /></Link>}
             <ul>
                 <li>
-                    <a href="https://github.com/Tojo6450" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/supriyo-ghorui-17929524b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </li>
-                <li>
                     <HashLink smooth to="/#projects">Projects</HashLink>
                 </li>
                 <li>

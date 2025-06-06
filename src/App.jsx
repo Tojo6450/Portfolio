@@ -73,7 +73,7 @@ function App() {
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.25 }}
                   >
-                    <Projects isMobile={isMobile} theme={theme}/>
+                    <Projects theme={theme} />
                   </motion.section>
                   <motion.section
                     className="skills"
