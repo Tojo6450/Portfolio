@@ -35,7 +35,7 @@ const Home = () => {
               <img
                 className="profile-images"
                 src="/mypic.png"
-                alt="Godfred"
+                alt="Supriyo "
                 loading="lazy"
                 onLoad={() => setImageLoad(true)}
               />
@@ -52,11 +52,11 @@ const Home = () => {
                     {
                       icon: <FaCode />,
                       href: "https://codolio.com/profile/Supriyo",
-                      label: "LeetCode",
+                      label: "CodingProfile",
                     },
                     {
                       icon: <FaXTwitter />,
-                      href: "",
+                      href: "https://x.com/supriyo4276?t=83z1N3FDjeRcDINJJ9_QQg&s=09",
                       label: "Twitter",
                     },
                     {

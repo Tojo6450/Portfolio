@@ -54,7 +54,7 @@ function App() {
                 {!isMobile && theme === 'dark' }
                 {!isMobile && theme === 'light'}
                 <StickyNav isMobile={isMobile} />
-                <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+                <ThemeToggle theme={theme} toggleTheme={toggleTheme} isMobile={isMobile}/>
                 <main>
                   <motion.section
                     className="hero"

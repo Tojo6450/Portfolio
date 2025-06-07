@@ -1,6 +1,6 @@
 .theme-toggle {
   position: fixed;
-  top: 2rem;
+  top: 1rem;
   right: 3rem;
   cursor: pointer;
   z-index: 1100;
@@ -8,8 +8,8 @@
 }
 
 .toggle-switch {
-  width: 50px;
-  height: 24px;
+  width: 40px;
+  height: 21px;
   background-color: var(--toggle-background, #ddd);
   border-radius: 15px;
   border: 1px solid var(--h1-color);
@@ -43,7 +43,15 @@
 
 @media(max-width: 768px) {
   .theme-toggle{
-    top: 5rem;
-    right: .5rem;
+    top: 1rem;
+    right: -0.1rem;
+  }
+  .toggle-thumb {
+  width: 16px;
+  height: 16px;
+}
+  .toggle-switch{ 
+    width: 30px;
+    height: 16px;
   }
 }
