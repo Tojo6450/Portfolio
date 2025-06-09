@@ -20,7 +20,7 @@ const codingProfiles = [
     title: "Codeforces",
     screenshots: ["/codingprofile/codeforces.png"],
     questionsSolved: "200+",
-    maxContestRating: "1180",
+    maxContestRating: "1209(Pupil)",
     profileLink: "https://codeforces.com/profile/Supriyo645",
   },
   {
