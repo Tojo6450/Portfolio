@@ -34,7 +34,7 @@ const Home = () => {
               {!imageLoad && <div className="image-placeholders"></div>}
               <img
                 className="profile-images"
-                src="/mypic.png"
+                src="/mypic.jpg"
                 alt="Supriyo "
                 loading="lazy"
                 onLoad={() => setImageLoad(true)}
