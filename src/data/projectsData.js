@@ -1,24 +1,35 @@
 // src/data/projectsData.js
 const projectsData = [
   {
-    title: "Budget Expense Tracker",
+    title: "StayEase",
+    status: "● Running",
+    description:
+     "Engineered a full-stack rental platform where users can list, update, and manage rental properties. Integrated MongoDB for backend data storage, user authentication for secure access, and robust API error handling for reliable operation across listing and booking features.",
+    links: {
+      live: "https://stayease-kly1.onrender.com/",
+      github: "https://github.com/Tojo6450/StayEase",
+      demo: "#",
+    },
+  },
+  {
+  title: "Intervue AI",
+  status: "● Building",
+  description:
+    "Developed an AI-powered interview preparation platform enabling users to select job roles and experience levels to generate tailored interview questions. Integrated Gemini AI API for dynamic question generation, role-based content customization, and real-time response evaluation to simulate realistic interview scenarios. Ensured seamless user experience with responsive frontend and secure backend data handling.",
+  links: {
+    live: "#",
+    github: "https://github.com/Tojo6450/Intervue-AI",
+    demo: "#"
+  }
+  },
+   {
+    title: "SpendSync",
     status: "● Running",
     description:
       "Built a responsive budget expense tracker that helps users monitor spending, categorize expenses, and set savings goals. Includes interactive charts, real-time balance updates, and intuitive UI for seamless financial planning.",
     links: {
       live: "https://budget-expense-tracker-app.vercel.app/",
       github: "https://github.com/Tojo6450/Budget-Expense-Tracker-App",
-      demo: "#",
-    },
-  },
-  {
-    title: "StayEase",
-    status: "● Building",
-    description:
-     "Engineered a full-stack rental platform where users can list, update, and manage rental properties. Integrated MongoDB for backend data storage, user authentication for secure access, and robust API error handling for reliable operation across listing and booking features.",
-    links: {
-      live: "#",
-      github: "https://github.com/Tojo6450/StayEase",
       demo: "#",
     },
   },
