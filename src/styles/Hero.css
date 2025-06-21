@@ -45,7 +45,10 @@
   border-radius: 15px;
   height: 100%;
 }
-
+.lt{
+  background-color: #cbd3e0 !important;
+  color: #000 !important;
+}
 /* Profile Image */
 .profile-image-containers {
   position: relative;

@@ -9,7 +9,7 @@ import { SiLeetcode } from "react-icons/si";
 import { FaGithub, FaXTwitter, FaLinkedin, FaCode } from "react-icons/fa6";
 import '../styles/Hero.css';
 
-const Home = () => {
+const Home = ({theme}) => {
   const [imageLoad, setImageLoad] = useState(false);
   const [isMobile, setIsMobile] = useState(true);
 
@@ -29,7 +29,7 @@ const Home = () => {
       <div className={isMobile ? "home-mobile-layouts" : "home-desktop-grids"}>
         {/* Profile Card */}
         <div className={isMobile ? "" : "profile-grid-areas"}>
-          <div className="profile-cards">
+          <div className={`profile-cards ${theme==='light'?'lt' :' '}`}>
             <div className="profile-image-containers">
               {!imageLoad && <div className="image-placeholders"></div>}
               <img
@@ -41,9 +41,9 @@ const Home = () => {
               />
             </div>
 
-            <h1 className="profile-names">Supriyo Ghorui</h1>
+            <h1 className={`profile-names ${theme==='light'?'lt' :' '}`}>Supriyo Ghorui</h1>
 
-            <p className="profile-roles">
+            <p className={`profile-roles ${theme==='light'?'lt' :' '}`}>
               I am a Software Developer .
             </p>
 
@@ -72,7 +72,7 @@ const Home = () => {
                   ].map((social, index) => (
                     <a
                       key={index}
-                      className="social-link"
+                      className={`social-link ${theme==='light'?'lt' :' '}`}
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -87,18 +87,18 @@ const Home = () => {
 
         {/* About Section */}
         <div className={isMobile ? "" : "about-grid-areas"}>
-          <div className="about-card">
+          <div className={`about-card ${theme==='light'?'lt' :' '}`}>
             <div className="about-content">
-              <p className="about-greeting">Hi There!</p>
+              <p className={`about-greeting ${theme==='light'?'lt' :' '}`}>Hi There!</p>
 
-              <h2 className="about-heading">
+              <h2 className={`about-heading ${theme==='light'?'lt' :' '}`}>
                 I'm Supriyo Ghorui, a Software Developer building seamless,
                 user-focused web applications with clean, efficient code.
               </h2>
 
-               <p className="about-paragraph">
+               <p className={`about-paragraph ${theme==='light'?'lt' :' '}`}>
                 I specialize in building high-performance, responsive solutions using modern technologies like{" "}
-                <span className="tech-colored react">React</span>,{" "}
+                <span className={`tech-colored react ${theme==='light'?'lt' :' '}`}>React</span>,{" "}
                 <span className="tech-colored next">Next.js</span>,{" "}
                 <span className="tech-colored node">Node.js</span>, and{" "}
                 <span className="tech-colored ts">JavaScript</span>. My strength lies in blending solid engineering
@@ -106,12 +106,12 @@ const Home = () => {
               </p>
 
               <div className="availability-section">
-                <div className="availability-status">
+                <div className={`availability-status ${theme==='light'?'lt' :' '}`}>
                   <span className="status-indicator" />
                   <p>Available for Internships and full-time opportunities.</p>
                 </div>
                 <a
-              href="https://drive.google.com/file/d/1jaU1RlZQKrouy__8q0gted7kTt0un-Uv/view?usp=sharing"
+              href="https://drive.google.com/file/d/1K46BeBzkwLcd82XUinGByFZCRfzTsQ1L/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="download-cv-button"
