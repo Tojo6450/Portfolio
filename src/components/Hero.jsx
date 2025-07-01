@@ -35,7 +35,7 @@ const Home = ({theme}) => {
               <img
                 className="profile-images"
                 src="/mypic.jpg"
-                alt="Supriyo "
+                alt="Supriyo"
                 loading="lazy"
                 onLoad={() => setImageLoad(true)}
               />
