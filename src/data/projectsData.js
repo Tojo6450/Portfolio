@@ -13,7 +13,7 @@ const projectsData = [
   },
   {
   title: "Intervue AI",
-  status: "● Building",
+  status: "● Running",
   description:
     "Developed an AI-powered interview preparation platform enabling users to select job roles and experience levels to generate tailored interview questions. Integrated Gemini AI API for dynamic question generation, role-based content customization, and real-time response evaluation to simulate realistic interview scenarios. Ensured seamless user experience with responsive frontend and secure backend data handling.",
   links: {
