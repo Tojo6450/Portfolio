@@ -27,7 +27,7 @@ const codingProfiles = [
     title: "CodeChef",
     screenshots: ["/codingprofile/codechef.png"],
     questionsSolved: "100+",
-    maxContestRating: "1625(3-star)",
+    maxContestRating: "1655(3-star)",
     profileLink: "https://www.codechef.com/users/supriyoghorui0",
   },
 ];
