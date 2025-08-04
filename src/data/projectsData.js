@@ -17,7 +17,7 @@ const projectsData = [
   description:
     "Developed an AI-powered interview preparation platform enabling users to select job roles and experience levels to generate tailored interview questions. Integrated Gemini AI API for dynamic question generation, role-based content customization, and real-time response evaluation to simulate realistic interview scenarios. Ensured seamless user experience with responsive frontend and secure backend data handling.",
   links: {
-    live: "#",
+    live: "https://intervue-ai-peach.vercel.app/",
     github: "https://github.com/Tojo6450/Intervue-AI",
     demo: "#"
   }
