@@ -111,7 +111,7 @@ const Home = ({theme}) => {
                   <p>Available for Internships and full-time opportunities.</p>
                 </div>
                 <a
-              href="https://drive.google.com/file/d/1PunDQOYKf4HEXHwMpKPylp8DlLVFgZrT/view"
+              href="https://drive.google.com/file/d/1oBlXAdtpUlxhs6bAcGhVFF0jKP36iXOQ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="download-cv-button"
