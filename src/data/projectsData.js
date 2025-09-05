@@ -1,5 +1,16 @@
 // src/data/projectsData.js
 const projectsData = [
+   {
+    title: "StagePass",
+    status: "● Running",
+    description:
+     "StagePass is an all-in-one platform for creating and experiencing live events.Organizers get a powerful dashboard with real-time analytics and a QR code scanner, while attendees enjoy secure payments with Razorpay and instant digital tickets for a seamless event experience.",
+    links: {
+      live: "https://stage-pass-three.vercel.app/",
+      github: "https://github.com/Tojo6450/StagePass",
+      demo: "#",
+    },
+  },
   {
     title: "StayEase",
     status: "● Running",
