@@ -46,16 +46,18 @@ function Projects({theme}) {
       className={`project-icons a ${theme === "light" ? "light-mode" : ""}`}
     >
       <FaLink />
-    </a>
-    <a
-    href={project.links.demo}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`project-icons a ${theme === "light" ? "light-mode" : ""}`}
-  >
-    <FaEye />
-  </a>          
+    </a>      
   )}
+   {project.status === "● Running" && (
+    <a
+      href={project.links.demo}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`project-icons a ${theme === "light" ? "light-mode" : ""}`}
+    >
+      <FaEye />
+    </a>      
+  )}             
   <a
     href={project.links.github}
     target="_blank"
