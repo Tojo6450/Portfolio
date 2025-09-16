@@ -8,7 +8,7 @@ const projectsData = [
     links: {
       live: "https://stage-pass-three.vercel.app/",
       github: "https://github.com/Tojo6450/StagePass",
-      demo: "#",
+      demo: "https://drive.google.com/file/d/1BhmGTXK6ImESxaXw10T1kenxVWPlqUsz/view?usp=sharing",
     },
   },
   {
