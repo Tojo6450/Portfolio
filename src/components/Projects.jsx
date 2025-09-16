@@ -47,6 +47,14 @@ function Projects({theme}) {
     >
       <FaLink />
     </a>
+    <a
+    href={project.links.demo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`project-icons a ${theme === "light" ? "light-mode" : ""}`}
+  >
+    <FaEye />
+  </a>          
   )}
   <a
     href={project.links.github}
@@ -56,6 +64,7 @@ function Projects({theme}) {
   >
     <FaGithub />
   </a>
+               
 </div>
 
             </div>
