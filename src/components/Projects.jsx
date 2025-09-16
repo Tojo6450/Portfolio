@@ -48,7 +48,7 @@ function Projects({theme}) {
       <FaLink />
     </a>      
   )}
-   {project.status === "● Running" && (
+   {project.status === "● Running" && project.links.demo != "#" && (
     <a
       href={project.links.demo}
       target="_blank"
