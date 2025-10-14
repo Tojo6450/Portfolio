@@ -6,7 +6,7 @@ const codingProfiles = [
     title: "LeetCode",
     screenshots: ["/codingprofile/LeetCode-Logo.png"],
     questionsSolved: "450+",
-    maxContestRating: "1710",
+    maxContestRating: "1738",
     profileLink: "https://leetcode.com/u/algosugo645/",
   },
   {
