@@ -12,7 +12,7 @@ const projectsData = [
     },
   },
   {
-    title: "StayEase",
+    title: "TripZ",
     status: "● Running",
     description:
      "Engineered a full-stack rental platform where users can list, update, and manage rental properties. Integrated MongoDB for backend data storage, user authentication for secure access, and robust API error handling for reliable operation across listing and booking features.",
